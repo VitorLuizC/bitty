@@ -1,22 +1,10 @@
 {
-  "name": "@vitorluizc/mono-repository",
-  "version": "0.0.0",
-  "description": "The mono-repository of my micro frameworks and small libraries.",
+  "name": "@micro/monorepo",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pnpm recursive run test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VitorLuizC/micro-fws.git"
-  },
-  "author": {
-    "url": "https://vitorluizc.github.io/",
-    "name": "Vitor Luiz Cavalcanti",
-    "email": "vitorluizc@outlook.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/VitorLuizC/micro-fws/issues"
-  },
-  "homepage": "https://github.com/VitorLuizC/micro-fws#readme"
+  "devDependencies": {
+    "pnpm": "^4.13.0"
+  }
 }
