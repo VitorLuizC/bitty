@@ -1,0 +1,2 @@
+# `pipe` overloads break prettier's printWidth.
+src/pipe.ts
