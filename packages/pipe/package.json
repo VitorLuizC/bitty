@@ -2,6 +2,7 @@
   "name": "@bitty/pipe",
   "version": "0.0.2",
   "description": "A pipe function to perform function composition in LTR (Left To Right) direction.",
+  "sideEffects": false,
   "cdn": "dist/pipe.umd.js",
   "main": "dist/pipe.js",
   "types": "types/pipe.d.ts",
@@ -12,6 +13,19 @@
   "files": [
     "dist/",
     "types/"
+  ],
+  "keywords": [
+    "pipe",
+    "compose",
+    "composition",
+    "flow",
+    "pipeline",
+    "fp",
+    "functional programming",
+    "chain",
+    "function",
+    "functional",
+    "serial"
   ],
   "scripts": {
     "test": "pnpm run test:code-style && pnpm run test:unit",
