@@ -1,0 +1,43 @@
+{
+  "name": "@bitty/pipe",
+  "version": "0.0.0",
+  "description": "A pipe function to perform function composition in LTR (Left To Right) direction.",
+  "cdn": "./dist/pipe.umd.js",
+  "main": "./dist/pipe.js",
+  "types": "./types/pipe.d.ts",
+  "unpkg": "./dist/pipe.umd.js",
+  "module": "./dist/pipe.esm.js",
+  "jsdelivr": "./dist/pipe.umd.js",
+  "umd:main": "./dist/pipe.umd.js",
+  "scripts": {
+    "test": "pnpm run test:code-style && pnpm run test:unit",
+    "test:transpile": "tsc --project ./tsconfig.test.json",
+    "test:unit": "npm run test:transpile && ava",
+    "test:code-style": "prettier --check \"./{src,test}/**/*.ts\"",
+    "build": "npm run build:transpile && npm run build:bundle",
+    "build:transpile": "tsc --project ./tsconfig.build.json",
+    "build:bundle": "rollup --config rollup.config.js",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/bitty.git"
+  },
+  "author": {
+    "url": "https://vitorluizc.github.io/",
+    "name": "Vitor Luiz Cavalcanti",
+    "email": "vitorluizc@outlook.com"
+  },
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/bitty/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/bitty/tree/master/packages/pipe",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.6.0",
+    "prettier": "^2.0.4",
+    "rollup": "^2.6.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "typescript": "^3.8.3"
+  }
+}
