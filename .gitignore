@@ -1,2 +1,5 @@
 # Node.js modules.
 node_modules/
+
+# Log files.
+*.log
