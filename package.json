@@ -1,5 +1,5 @@
 {
-  "name": "@micro/monorepo",
+  "name": "@bitty/root",
   "private": true,
   "scripts": {
     "test": "pnpm recursive run test"
