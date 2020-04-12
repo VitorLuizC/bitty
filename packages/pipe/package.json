@@ -1,6 +1,6 @@
 {
   "name": "@bitty/pipe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A pipe function to perform function composition in LTR (Left To Right) direction.",
   "sideEffects": false,
   "cdn": "dist/pipe.umd.js",
