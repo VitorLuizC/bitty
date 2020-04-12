@@ -9,6 +9,10 @@
   "module": "./dist/pipe.esm.js",
   "jsdelivr": "./dist/pipe.umd.js",
   "umd:main": "./dist/pipe.umd.js",
+  "files": [
+    "./dist",
+    "./types"
+  ],
   "scripts": {
     "test": "pnpm run test:code-style && pnpm run test:unit",
     "test:transpile": "tsc --project ./tsconfig.test.json",
