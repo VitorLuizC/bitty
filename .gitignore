@@ -3,3 +3,6 @@ node_modules/
 
 # Log files.
 *.log
+
+# Finder settings files (MacOS).
+.DS_Store
