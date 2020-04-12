@@ -10,8 +10,8 @@
   "jsdelivr": "./dist/pipe.umd.js",
   "umd:main": "./dist/pipe.umd.js",
   "files": [
-    "./dist",
-    "./types"
+    "./dist/",
+    "./types/"
   ],
   "scripts": {
     "test": "pnpm run test:code-style && pnpm run test:unit",
