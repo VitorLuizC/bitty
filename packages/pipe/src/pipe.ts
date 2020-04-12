@@ -45,9 +45,9 @@ export default function pipe<Args extends unknown[], T0, T1, T2, T3, T4, T5, T6,
  *
  * getInitials('Vitor Luiz Cavalcanti');
  * //=> "VLC"
- * @param {function(*):*} fn - An arity N function. Its result is the argument of next one.
- * @param {...(function(*):*)[]} fns - Functions of arity 1. Each one's result is next's argument.
- * @returns {function(*):*}
+ * @param {Function} fn - An arity N function. Its result is the argument of next one.
+ * @param {...Function[]} fns - Functions of arity 1. Each one's result is next's argument.
+ * @returns {Function}
  */
 export default function pipe(fn: Function, ...fns: Function[]) {
   return function () {
