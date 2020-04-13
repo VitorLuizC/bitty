@@ -8,7 +8,7 @@ A pipe function to perform function composition in LTR (Left-To-Right) direction
 - 📦 Distributions in ESM, CommonJS, UMD and UMD _minified_ formats.
 
 - ⚡ Lightweight:
-  - Weights less than 0.3B (min + gzip).
+  - Weighs less than 0.3KB (min + gzip).
   - 3x smaller than `ramda.pipe`.
 
 - 🔋 Bateries included:
