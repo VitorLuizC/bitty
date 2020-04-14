@@ -22,7 +22,7 @@
  * @param fns - Functions of arity 1. Each one's result is next's argument.
  */
 export default function pipe<Args extends unknown[], T0>(...fns: [(...xs: Args) => T0]): (...xs: Args) => T0;
-export default function pipe<Args extends unknown[], T0, T1>(...fns: [(...xs: Args) => T0, (x: T0) => T1]): (...xs: Args) => T0;
+export default function pipe<Args extends unknown[], T0, T1>(...fns: [(...xs: Args) => T0, (x: T0) => T1]): (...xs: Args) => T1;
 export default function pipe<Args extends unknown[], T0, T1, T2>(...fns: [(...xs: Args) => T0, (x: T0) => T1, (x: T1) => T2]): (...xs: Args) => T2;
 export default function pipe<Args extends unknown[], T0, T1, T2, T3>(...fns: [(...xs: Args) => T0, (x: T0) => T1, (x: T1) => T2, (x: T2) => T3]): (...xs: Args) => T3;
 export default function pipe<Args extends unknown[], T0, T1, T2, T3, T4>(...fns: [(...xs: Args) => T0, (x: T0) => T1, (x: T1) => T2, (x: T2) => T3, (x: T3) => T4]): (...xs: Args) => T4;
