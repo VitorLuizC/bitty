@@ -2,7 +2,7 @@
   "name": "@bitty/root",
   "private": true,
   "scripts": {
-    "test": "pnpm recursive run test"
+    "test": "pnpm --filter ./packages run test"
   },
   "devDependencies": {
     "pnpm": "^4.13.0"
