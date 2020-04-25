@@ -1,0 +1,47 @@
+{
+  "name": "@bitty/either",
+  "version": "0.0.0",
+  "description": "Either monad implementation.",
+  "sideEffects": false,
+  "cdn": "dist/either.umd.js",
+  "main": "dist/either.js",
+  "types": "types/either.d.ts",
+  "unpkg": "dist/either.umd.js",
+  "module": "dist/either.esm.js",
+  "jsdelivr": "dist/either.umd.js",
+  "umd:main": "dist/either.umd.js",
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "keywords": [
+    "fp",
+    "functional programming",
+    "function",
+    "functional"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/bitty.git"
+  },
+  "author": {
+    "url": "https://vitorluizc.github.io/",
+    "name": "Vitor Luiz Cavalcanti",
+    "email": "vitorluizc@outlook.com"
+  },
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/bitty/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/bitty/tree/master/packages/pipe",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.7.1",
+    "prettier": "^2.0.5",
+    "rollup": "^2.7.2",
+    "rollup-plugin-terser": "^5.3.0",
+    "typescript": "^3.8.3"
+  }
+}
