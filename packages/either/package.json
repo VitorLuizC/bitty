@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "description": "Either monad implementation.",
   "sideEffects": false,
-  "cdn": "dist/either.umd.js",
-  "main": "dist/either.js",
-  "types": "types/either.d.ts",
-  "unpkg": "dist/either.umd.js",
-  "module": "dist/either.esm.js",
-  "jsdelivr": "dist/either.umd.js",
-  "umd:main": "dist/either.umd.js",
+  "cdn": "dist/Either.umd.js",
+  "main": "dist/Either.js",
+  "types": "types/Either.d.ts",
+  "unpkg": "dist/Either.umd.js",
+  "module": "dist/Either.esm.js",
+  "jsdelivr": "dist/Either.umd.js",
+  "umd:main": "dist/Either.umd.js",
   "files": [
     "dist/",
     "types/"
@@ -21,7 +21,10 @@
     "functional"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:transpile && npm run build:bundle",
+    "build:transpile": "tsc --project ./tsconfig.build.json",
+    "build:bundle": "rollup --config rollup.config.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",

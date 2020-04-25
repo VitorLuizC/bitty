@@ -4,7 +4,7 @@ import Predicate from './Predicate.js';
 import Refinement from './Refinement.js';
 import Right from './Right.js';
 
-type Either<L, R> = Left<L, R> | Right<L, R>;
+export type Either<L, R> = Left<L, R> | Right<L, R>;
 
 export const left = Left;
 
@@ -63,7 +63,7 @@ type EitherConstructor = {
   fromPredicate: typeof fromPredicate;
 };
 
-const Either: EitherConstructor = {
+export const Either: EitherConstructor = {
   left,
   right,
   tryCatch,

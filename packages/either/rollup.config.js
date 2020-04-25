@@ -19,6 +19,7 @@ const banner = `/*!
  */
 const Option = (options) => ({
   banner,
+  exports: 'named',
   sourcemap: true,
   ...options,
 });
@@ -28,24 +29,24 @@ const Option = (options) => ({
  * @type {import('rollup').RollupOptions}
  */
 const options = {
-  input: './src/pipe.js',
+  input: './src/Either.js',
   output: [
     Option({
-      file: './dist/pipe.js',
+      file: './dist/Either.js',
       format: 'commonjs',
     }),
     Option({
-      file: './dist/pipe.esm.js',
+      file: './dist/Either.esm.js',
       format: 'esm',
     }),
     Option({
-      file: './dist/pipe.umd.js',
-      name: 'pipe',
+      file: './dist/Either.umd.js',
+      name: 'Either',
       format: 'umd',
     }),
     Option({
-      file: './dist/pipe.umd.min.js',
-      name: 'pipe',
+      file: './dist/Either.umd.min.js',
+      name: 'Either',
       format: 'umd',
       plugins: [terser()],
     }),
