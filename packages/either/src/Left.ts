@@ -1,23 +1,27 @@
-import IEither from './IEither.js';
+import type { EitherMethods } from './Either';
 
-interface Left<L, R> extends IEither<L, R> {
+interface Left<L, R> extends EitherMethods<L, R> {
   _kind: 'Left';
 }
 
-type LeftConstructor = <L, R>(value: L) => Left<L, R>;
-
-const Left: LeftConstructor = (value) => ({
-  _kind: 'Left',
-
-  // This is kind a "Please, I known what I'm doing"
-  map: () => Left(value) as any,
-
-  // Same as above
-  chain: () => Left(value) as any,
-
-  isLeft: () => true,
-
-  isRight: () => false,
-});
+/**
+ *
+ * @param value -
+ */
+function Left<L = never, R = never>(value: L): Left<L, R> {
+  return {
+    _kind: 'Left',
+    map: () => Left(value),
+    then: () => Left(value),
+    chain: () => Left(value),
+    mapLeft: (fn) => Left(fn(value)),
+    isLeft: () => true,
+    isRight: () => false,
+    match: ({ left }) => left(value),
+    fold: (onLeft) => onLeft(value),
+    getOrElse: (fn) => fn(value),
+    onError: (fn) => fn(value),
+  };
+}
 
 export default Left;

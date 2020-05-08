@@ -1,4 +1,4 @@
-import { tryCatch, fromNullish } from './Either.js';
+import { tryCatch, fromNullish } from './index.js';
 
 const parseJSON = <R>(value: string) =>
   tryCatch(

@@ -1,74 +1,33 @@
-import Left from './Left.js';
-import Nullish, { NotNullish } from './Nullish.js';
-import Predicate from './Predicate.js';
-import Refinement from './Refinement.js';
-import Right from './Right.js';
+import type Left from './Left';
+import type Right from './Right';
 
-export type Either<L, R> = Left<L, R> | Right<L, R>;
+type Either<L, R> = Left<L, R> | Right<L, R>;
 
-export const left = Left;
-
-export const right = Right;
-
-/**
- *
- * @param predicate
- * @param onLeft
- */
-export function fromPredicate<L, R, R2 extends R>(
-  predicate: Refinement<R, R2>,
-  onLeft: (value: R) => L,
-): (value: R) => Either<L, R2>;
-export function fromPredicate<L, R>(
-  predicate: Predicate<R>,
-  onLeft: (value: R) => L,
-): (value: R) => Either<L, R>;
-export function fromPredicate(predicate: Predicate, onLeft: Function) {
-  return (value: unknown) =>
-    predicate(value) ? Right(value) : Left(onLeft(value));
-}
-
-/**
- *
- * @param defaultValue
- */
-export function fromNullish<L>(defaultValue: L) {
-  return <R>(value?: Nullish | R): Either<L, NotNullish<R>> =>
-    value === null || value === undefined
-      ? Left(defaultValue)
-      : Right(value as NotNullish<R>);
-}
-
-/**
- *
- * @param fn
- * @param onLeft
- */
-export function tryCatch<L, R>(
-  fn: () => R,
-  onLeft: (error: unknown) => L,
-): Either<L, R> {
-  try {
-    return Right(fn());
-  } catch (error) {
-    return Left(onLeft(error));
-  }
-}
-
-type EitherConstructor = {
-  left: typeof left;
-  right: typeof right;
-  tryCatch: typeof tryCatch;
-  fromNullish: typeof fromNullish;
-  fromPredicate: typeof fromPredicate;
+export type EitherPattern<L, R, T> = {
+  left: (value: L) => T;
+  right: (value: R) => T;
 };
 
-export const Either: EitherConstructor = {
-  left,
-  right,
-  tryCatch,
-  fromNullish,
-  fromPredicate,
-};
+export interface EitherMethods<L, R> {
+  map<R2>(fn: (value: R) => R2): Either<L, R2>;
+
+  then<R2>(fn: (value: R) => R2 | Either<L, R2>): Either<L, R2>;
+
+  chain<R2>(fn: (value: R) => Either<L, R2>): Either<L, R2>;
+
+  mapLeft<L2>(fn: (value: L) => L2): Either<L2, R>;
+
+  isLeft(): this is Left<L, R>;
+
+  isRight(): this is Right<L, R>;
+
+  match<T>(pattern: EitherPattern<L, R, T>): T;
+
+  fold<T>(onLeft: (value: L) => T, onRight: (value: R) => T): T;
+
+  onError<L2>(fn: (value: L) => Either<L2, R>): Either<L2, R>;
+
+  getOrElse(fn: (value: L) => R): R;
+}
 
 export default Either;
