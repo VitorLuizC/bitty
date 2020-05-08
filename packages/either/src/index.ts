@@ -1,5 +1,10 @@
 type Either<L, R> = Left<L, R> | Right<L, R>;
 
+type EitherPattern<L, R, T> = {
+  left: (value: L) => T;
+  right: (value: R) => T;
+};
+
 interface EitherMethods<L, R> {
   map<R2>(fn: (value: R) => R2): Either<L, R2>;
 
@@ -12,6 +17,14 @@ interface EitherMethods<L, R> {
   isLeft(): this is Left<L, R>;
 
   isRight(): this is Right<L, R>;
+
+  match<T>(pattern: EitherPattern<L, R, T>): T;
+
+  fold<T>(onLeft: (value: L) => T, onRight: (value: R) => T): T;
+
+  onError<L2>(fn: (value: L) => Either<L2, R>): Either<L2, R>;
+
+  getOrElse(fn: (value: L) => R): R;
 }
 
 interface Left<L, R> extends EitherMethods<L, R> {
@@ -35,6 +48,10 @@ const Left = <L = never, R = never>(value: L): Left<L, R> => ({
   mapLeft: (fn) => Left(fn(value)),
   isLeft: () => true,
   isRight: () => false,
+  match: ({ left }) => left(value),
+  fold: (onLeft) => onLeft(value),
+  getOrElse: (fn) => fn(value),
+  onError: (fn) => fn(value),
 });
 
 const Right = <L = never, R = never>(value: R): Right<L, R> => ({
@@ -48,4 +65,8 @@ const Right = <L = never, R = never>(value: R): Right<L, R> => ({
   mapLeft: () => Right(value),
   isLeft: () => false,
   isRight: () => true,
+  match: ({ right }) => right(value),
+  fold: (_, onRight) => onRight(value),
+  getOrElse: () => value,
+  onError: () => Right(value),
 });
