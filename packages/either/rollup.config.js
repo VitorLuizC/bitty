@@ -29,7 +29,7 @@ const Option = (options) => ({
  * @type {import('rollup').RollupOptions}
  */
 const options = {
-  input: './src/Either.js',
+  input: './src/index.js',
   output: [
     Option({
       file: './dist/Either.js',
