@@ -13,6 +13,6 @@ export type NonNullish<T> = T extends Nullish ? never : T;
  * @param {*} value - Value that will be checked.
  * @returns {Boolean}
  */
-export function isNullish(value: unknown): value is Nullish {
-  return value === null && value === undefined;
+export function isNullish(value?: unknown): value is Nullish {
+  return value === null || value === undefined;
 }
