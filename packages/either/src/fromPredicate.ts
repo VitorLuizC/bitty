@@ -6,9 +6,14 @@ import Left from './Left.js';
 import Right from './Right.js';
 
 /**
- *
- * @param predicate -
- * @param onLeft -
+ * Receives two arguments, a predicate and the `onLeft` function, and returns a
+ * function to create `Either` instances by checking predicate on values. If
+ * predicate returns true it uses value as `Right`, otherwise it uses value on
+ * `onLeft` and uses its result as `Left`.
+ * @param {function(R): boolean} predicate - A predicate function.
+ * @param {function(R): L} onLeft - A function to create value used as `Left`.
+ * @returns {function(R): Either.<L, R>}
+ * @template L, R
  */
 export default function fromPredicate<L, R, R2 extends R>(
   predicate: Refinement<R, R2>,

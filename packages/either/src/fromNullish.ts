@@ -6,7 +6,7 @@ import Left from './Left.js';
 import Right from './Right.js';
 
 /**
- * Receives a default value and returns a function to create Either instances
+ * Receives a default value and returns a function to create `Either` instances
  * from values that can be nullish (`void`, `null` or `undefined`). If so, it
  * returns a `Left` with received default value, otherwise a `Right` with
  * non-nullish value.
