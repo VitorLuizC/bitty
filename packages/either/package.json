@@ -40,7 +40,11 @@
   },
   "homepage": "https://github.com/VitorLuizC/bitty/tree/master/packages/pipe",
   "license": "MIT",
+  "dependencies": {
+    "@bitty/nullish": "workspace:*"
+  },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.0.0",
     "ava": "^3.8.2",
     "prettier": "^2.0.5",
     "rollup": "^2.11.2",

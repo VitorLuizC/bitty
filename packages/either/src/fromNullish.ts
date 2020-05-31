@@ -1,6 +1,6 @@
 import type Either from './Either';
-import type Nullish from './Nullish';
-import type NotNullish from './NotNullish';
+
+import isNullish, { Nullish, NotNullish } from '@bitty/nullish';
 
 import Left from './Left.js';
 import Right from './Right.js';
@@ -11,7 +11,5 @@ import Right from './Right.js';
  */
 export default function fromNullish<L>(defaultValue: L) {
   return <R>(value?: Nullish | R): Either<L, NotNullish<R>> =>
-    value === null || value === undefined
-      ? Left(defaultValue)
-      : Right(value as NotNullish<R>);
+    isNullish(value) ? Left(defaultValue) : Right(value as NotNullish<R>);
 }
