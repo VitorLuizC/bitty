@@ -26,6 +26,7 @@ function Right<L = never, R = never>(value: R): Right<L, R> {
     fold: (_, onRight) => onRight(value),
     getOrElse: () => value,
     onError: () => Right(value),
+    unwrap: () => value,
   };
 }
 

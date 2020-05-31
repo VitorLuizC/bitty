@@ -28,6 +28,8 @@ export interface EitherMethods<L, R> {
   onError<L2>(fn: (value: L) => Either<L2, R>): Either<L2, R>;
 
   getOrElse(fn: (value: L) => R): R;
+
+  unwrap(): L | R;
 }
 
 export default Either;
