@@ -1,5 +1,6 @@
 import pkg from './package.json';
 import { terser } from 'rollup-plugin-terser';
+import resolve from '@rollup/plugin-node-resolve';
 
 /**
  * A `string` used as copyright notice that is injected in generated bundles. It
@@ -30,6 +31,7 @@ const Option = (options) => ({
  */
 const options = {
   input: './src/index.js',
+  plugins: [resolve()],
   output: [
     Option({
       file: './dist/Either.js',
