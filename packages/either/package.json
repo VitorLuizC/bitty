@@ -21,10 +21,14 @@
     "functional"
   ],
   "scripts": {
-    "build": "npm run build:transpile && npm run build:bundle",
+    "test": "pnpm run test:code-style && pnpm run test:unit",
+    "test:code-style": "prettier --check \"./src/**/*.ts\"",
+    "test:transpile": "tsc --project ./tsconfig.test.json",
+    "test:unit": "pnpm run test:transpile && ava",
+    "build": "pnpm run build:transpile && pnpm run build:bundle",
     "build:transpile": "tsc --project ./tsconfig.build.json",
     "build:bundle": "rollup --config rollup.config.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run test && pnpm run build"
   },
   "repository": {
     "type": "git",
