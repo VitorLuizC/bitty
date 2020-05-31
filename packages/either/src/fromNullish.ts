@@ -1,6 +1,6 @@
 import type Either from './Either';
 
-import isNullish, { Nullish, NotNullish } from '@bitty/nullish';
+import { isNullish, Nullish, NotNullish } from '@bitty/nullish';
 
 import Left from './Left.js';
 import Right from './Right.js';
