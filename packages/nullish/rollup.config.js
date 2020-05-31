@@ -1,16 +1,4 @@
-import pkg from './package.json';
 import { terser } from 'rollup-plugin-terser';
-
-/**
- * A `string` used as copyright notice that is injected in generated bundles. It
- * contains package's name, version, author and license information.
- */
-const banner = `/*!
- * ${pkg.name} v${pkg.version}
- * (c) ${pkg.author.name} <${pkg.author.email}> (${pkg.author.url})
- * Released under the MIT License.
- */
-`;
 
 /**
  * Creates an output options object.
@@ -18,7 +6,6 @@ const banner = `/*!
  * @returns {import('rollup').OutputOptions}
  */
 const Option = (options) => ({
-  banner,
   exports: 'named',
   sourcemap: true,
   ...options,
