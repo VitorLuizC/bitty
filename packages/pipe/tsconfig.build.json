@@ -16,6 +16,6 @@
     // ECMAScript version settings
     "lib": ["ES5"]
   },
-  "include": ["./src/**.ts"],
-  "exclude": ["./src/**.spec.ts"]
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./src/**/*.spec.ts"]
 }
