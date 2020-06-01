@@ -1,8 +1,9 @@
 import type Either from './Either';
 
 /**
- *
- * @param value -
+ * Check if value is an `Either`.
+ * @param {*} value - Value that will be checked.
+ * @returns {Boolean}
  */
 export default function isEither(
   value: unknown,
