@@ -1,4 +1,5 @@
 import test from 'ava';
+
 import fromPredicate from './fromPredicate.js';
 
 test("fromPredicate returns `Left` if value doesn't match predicate", (context) => {

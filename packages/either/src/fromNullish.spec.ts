@@ -1,4 +1,5 @@
 import test from 'ava';
+
 import fromNullish from './fromNullish.js';
 
 test('fromNullish returns `Left` for nullish values', (context) => {
