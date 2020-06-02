@@ -1,4 +1,4 @@
-import type Either from './Either';
+import type Either from './Either.js';
 
 /**
  * Check if the value is an `Either`.

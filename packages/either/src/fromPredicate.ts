@@ -1,6 +1,6 @@
-import type Either from './Either';
-import type Predicate from './Predicate';
-import type Refinement from './Refinement';
+import type Either from './Either.js';
+import type Predicate from './Predicate.js';
+import type Refinement from './Refinement.js';
 
 import Left from './Left.js';
 import Right from './Right.js';

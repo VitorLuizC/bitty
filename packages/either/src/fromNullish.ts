@@ -1,4 +1,4 @@
-import type Either from './Either';
+import type Either from './Either.js';
 
 import { isNullish, Nullish, NonNullish } from '@bitty/nullish';
 

@@ -1,4 +1,4 @@
-export type { default as Either } from './Either';
+export type { default as Either } from './Either.js';
 
 export { default as fromNullish } from './fromNullish.js';
 export { default as fromPredicate } from './fromPredicate.js';

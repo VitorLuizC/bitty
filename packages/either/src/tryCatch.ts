@@ -1,4 +1,4 @@
-import type Either from './Either';
+import type Either from './Either.js';
 
 import Left from './Left.js';
 import Right from './Right.js';
