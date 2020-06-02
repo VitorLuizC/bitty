@@ -1,7 +1,7 @@
 import type Either from './Either';
 
 /**
- * Check if value is an `Either`.
+ * Check if the value is an `Either`.
  * @param {*} value - Value that will be checked.
  * @returns {Boolean}
  */

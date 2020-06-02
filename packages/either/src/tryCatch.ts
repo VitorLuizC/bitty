@@ -6,8 +6,8 @@ import Right from './Right.js';
 /**
  * Receives a function that returns a value used as `Right`, if an error is
  * thrown it calls `onLeft` with error and returns its result as `Left`.
- * @param {function(): R} fn
- * @param {function(*): L} onLeft
+ * @param {function(): R} fn - A function that returns the value used as `Right`.
+ * @param {function(*): L} onLeft - A function used to transform error into the value used as `Left`.
  * @returns {Either.<L, R>}
  * @template L, R
  */
