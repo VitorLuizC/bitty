@@ -1,12 +1,15 @@
-import type { EitherMethods } from './Either';
+import type { EitherMethods } from './Either.js';
 
 interface Left<L, R> extends EitherMethods<L, R> {
   _kind: 'Left';
 }
 
 /**
- *
- * @param value -
+ * Creates a `Left` instance that implements `Either` methods. It generally
+ * represents an error because `Either` is right-oriented.
+ * @param {L} value - The value used as `Left`.
+ * @returns {Left.<L, *>}
+ * @template L
  */
 function Left<L = never, R = never>(value: L): Left<L, R> {
   return {
