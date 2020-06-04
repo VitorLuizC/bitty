@@ -48,7 +48,7 @@
   "devDependencies": {
     "ava": "^3.8.2",
     "prettier": "^2.0.5",
-    "rollup": "^2.11.2",
+    "rollup": "^2.13.1",
     "rollup-plugin-terser": "^6.1.0",
     "typescript": "^3.9.3"
   }

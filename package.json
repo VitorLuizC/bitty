@@ -5,6 +5,6 @@
     "test": "pnpm --filter ./packages run test"
   },
   "devDependencies": {
-    "pnpm": "^5.0.2"
+    "pnpm": "^5.1.4"
   }
 }
