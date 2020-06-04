@@ -10,6 +10,8 @@ A pipe function to perform function composition in LTR (Left-To-Right) direction
 - ⚡ Lightweight:
   - Weighs less than 0.3KB (min + gzip).
   - 3x smaller than `ramda.pipe`.
+  - Tree-shakeable.
+  - Side-effects free.
 
 - 🔋 Bateries included:
   - No dependencies.
@@ -57,8 +59,8 @@ Import `pipe` from package and just compose your functions with it.
 import pipe from '@bitty/pipe';
 
 const resolveToNumber = pipe(
-  (value) => typeof value === 'number' ? value : parseFloat(value),
-  (value) => Number.isNaN(value) ? 0 : value
+  (value: unknown) => typeof value === 'number' ? value : parseFloat(value),
+  (value: number) => Number.isNaN(value) ? 0 : value,
 );
 
 resolveToNumber('12389');
@@ -71,7 +73,10 @@ The first pipe argument is an arity N function, so you can receive more than one
 import pipe from '@bitty/pipe';
 
 const fromTextToWords = (text: string, wordsToIgnore: string[] = []) =>
-  text.trim().split(/\s+/).filter(word => !wordsToIgnore.includes(word));
+  text
+    .trim()
+    .split(/\s+/)
+    .filter((word) => !wordsToIgnore.includes(word));
 
 const formatToInitials = pipe(
   fromTextToWords,
