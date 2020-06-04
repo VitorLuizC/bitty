@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "Nullish type and function helpers.",
   "sideEffects": false,
-  "private": true,
   "cdn": "dist/main.umd.js",
   "main": "dist/main.js",
   "types": "types/main.d.ts",
