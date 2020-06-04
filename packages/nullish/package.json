@@ -29,7 +29,7 @@
     "build": "pnpm run build:transpile && pnpm run build:bundle",
     "build:transpile": "tsc --project ./tsconfig.build.json",
     "build:bundle": "rollup --config rollup.config.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run test && pnpm run build"
   },
   "repository": {
     "type": "git",
