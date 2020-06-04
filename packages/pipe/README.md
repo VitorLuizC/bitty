@@ -55,7 +55,7 @@ This module has a UMD bundle available through JSDelivr and Unpkg CDNs.
 
 Import `pipe` from package and just compose your functions with it.
 
-```js
+```ts
 import pipe from '@bitty/pipe';
 
 const resolveToNumber = pipe(
