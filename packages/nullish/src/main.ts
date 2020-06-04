@@ -14,5 +14,5 @@ export type NonNullish<T> = T extends Nullish ? never : T;
  * @returns {Boolean}
  */
 export function isNullish(value?: unknown): value is Nullish {
-  return value === null || value === undefined;
+  return value == null;
 }
