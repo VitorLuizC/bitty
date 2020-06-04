@@ -23,7 +23,7 @@ function Left<L = never, R = never>(value: L): Left<L, R> {
     match: ({ left }) => left(value),
     fold: (onLeft) => onLeft(value),
     getOrElse: (fn) => fn(value),
-    onError: (fn) => fn(value),
+    orElse: (fn) => fn(value),
     unwrap: () => value,
   };
 }

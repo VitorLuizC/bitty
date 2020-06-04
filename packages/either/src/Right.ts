@@ -28,7 +28,7 @@ function Right<L = never, R = never>(value: R): Right<L, R> {
     match: ({ right }) => right(value),
     fold: (_, onRight) => onRight(value),
     getOrElse: () => value,
-    onError: () => Right(value),
+    orElse: () => Right(value),
     unwrap: () => value,
   };
 }

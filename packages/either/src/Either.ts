@@ -25,7 +25,7 @@ export interface EitherMethods<L, R> {
 
   fold<T>(onLeft: (value: L) => T, onRight: (value: R) => T): T;
 
-  onError<L2>(fn: (value: L) => Either<L2, R>): Either<L2, R>;
+  orElse<L2>(fn: (value: L) => Either<L2, R>): Either<L2, R>;
 
   getOrElse(fn: (value: L) => R): R;
 
