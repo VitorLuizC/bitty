@@ -1,5 +1,5 @@
 import test from 'ava';
-import { isNullish } from './main.js';
+import isNullish from './main.js';
 
 test('isNullish returns `true` for nullish values', (context) => {
   context.true(isNullish());
