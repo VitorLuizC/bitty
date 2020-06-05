@@ -3,7 +3,7 @@
 [![Bundle minified size](https://badgen.net/bundlephobia/min/@bitty/nullish)](https://bundlephobia.com/result?p=@bitty/nullish)
 [![Bundle minified and gzipped size](https://badgen.net/bundlephobia/minzip/@bitty/nullish)](https://bundlephobia.com/result?p=@bitty/nullish)
 
-A pipe function to perform function composition in LTR (Left-To-Right) direction.
+Nullish helper functions and types for TypeScript.
 
 - 📦 Distributions in ESM, CommonJS, UMD and UMD _minified_ formats.
 
@@ -47,6 +47,9 @@ This module has a UMD bundle available through JSDelivr and Unpkg CDNs.
   // UMD module is exposed through the "isNullish" global function.
   console.log(isNullish);
   //=> "[Function: isNullish]"
+
+  console.log(isNullish(null));
+  //=> true
 </script>
 ```
 
