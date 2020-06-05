@@ -55,7 +55,7 @@ This module has a UMD bundle available through JSDelivr and Unpkg CDNs.
 
 ## Getting Stated
 
-This module default exports `isNullish`, which is a function that checks if value is _nullish_.
+This module default exports `isNullish`, which is a predicate function that checks if value is _nullish_.
 
 ```ts
 import isNullish from '@bitty/pipe';
