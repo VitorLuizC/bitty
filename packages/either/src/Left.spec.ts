@@ -52,7 +52,7 @@ test('Left.isLeft returns `true`', (context) => {
 });
 
 test('Left.isRight returns `false`', (context) => {
-  context.true(Left(0).isLeft());
+  context.false(Left(0).isRight());
 });
 
 test('Left.match morphs left value and return it', (context) => {
