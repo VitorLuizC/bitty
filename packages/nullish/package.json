@@ -1,7 +1,7 @@
 {
   "name": "@bitty/nullish",
-  "version": "0.0.0",
-  "description": "Nullish type and function helpers.",
+  "version": "0.0.1",
+  "description": "Nullish helper functions and types for TypeScript.",
   "sideEffects": false,
   "cdn": "dist/main.umd.js",
   "main": "dist/main.js",
@@ -15,6 +15,13 @@
     "types/"
   ],
   "keywords": [
+    "null",
+    "undefined",
+    "nully",
+    "nullable",
+    "non-nullable",
+    "typescript",
+    "typescript-types",
     "fp",
     "functional programming",
     "function",
