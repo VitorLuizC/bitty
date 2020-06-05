@@ -28,12 +28,12 @@ const options = {
     }),
     Option({
       file: './dist/main.umd.js',
-      name: 'Either',
+      name: 'isNullish',
       format: 'umd',
     }),
     Option({
       file: './dist/main.umd.min.js',
-      name: 'Either',
+      name: 'isNullish',
       format: 'umd',
       plugins: [terser()],
     }),
