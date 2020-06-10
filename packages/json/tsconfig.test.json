@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    // Transpile output settings
+    "module": "CommonJS",
+    "target": "ESNext",
+
+    // Type declaration settings
+    "declaration": false
+  },
+  "include": ["./test/**/*.spec.ts", "./src"]
+}

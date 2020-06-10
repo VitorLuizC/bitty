@@ -1,0 +1,54 @@
+{
+  "name": "@bitty/json",
+  "version": "0.0.0",
+  "description": "Types and type-safe functions for JSON.",
+  "sideEffects": false,
+  "cdn": "dist/main.umd.js",
+  "main": "dist/main.js",
+  "types": "types/main.d.ts",
+  "unpkg": "dist/main.umd.js",
+  "module": "dist/main.esm.js",
+  "jsdelivr": "dist/main.umd.js",
+  "umd:main": "dist/main.umd.js",
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "keywords": [
+    "fp",
+    "functional programming",
+    "function",
+    "functional"
+  ],
+  "scripts": {
+    "test": "pnpm run test:code-style && pnpm run test:unit",
+    "test:code-style": "prettier --check \"./src/**/*.ts\"",
+    "test:transpile": "tsc --project ./tsconfig.test.json",
+    "test:unit": "pnpm run test:transpile && ava",
+    "build": "pnpm run build:transpile && pnpm run build:bundle",
+    "build:transpile": "tsc --project ./tsconfig.build.json",
+    "build:bundle": "rollup --config rollup.config.js",
+    "prepublishOnly": "pnpm run test && pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/bitty.git"
+  },
+  "author": {
+    "url": "https://vitorluizc.github.io/",
+    "name": "Vitor Luiz Cavalcanti",
+    "email": "vitorluizc@outlook.com"
+  },
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/bitty/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/bitty/tree/master/packages/pipe",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.8.2",
+    "prettier": "^2.0.5",
+    "rollup": "^2.13.1",
+    "rollup-plugin-terser": "^6.1.0",
+    "typescript": "^3.9.3"
+  }
+}
