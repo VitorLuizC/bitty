@@ -1,0 +1,3 @@
+[submodule "packages/animate"]
+	path = packages/animate
+	url = git@github.com:VitorLuizC/animate.git
