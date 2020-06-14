@@ -6,3 +6,12 @@ node_modules/
 
 # Finder settings files (MacOS).
 .DS_Store
+
+# NPM's lockfiles.
+# We're using PNPM and it provides its own lockfile.
+npm-lockfile.json
+npm-shrinkwrap.json‎
+
+# Yarn's lockfile
+# We're using PNPM and it provides its own lockfile.
+yarn.lock
