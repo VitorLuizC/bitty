@@ -1,3 +1,6 @@
 [submodule "packages/animate"]
 	path = packages/animate
 	url = git@github.com:VitorLuizC/animate.git
+[submodule "packages/format-date"]
+	path = packages/format-date
+	url = git@github.com:VitorLuizC/format-date.git
