@@ -45,7 +45,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VitorLuizC/bitty.git"
+    "url": "git+https://github.com/VitorLuizC/bitty.git",
+    "directory": "packages/nullish"
   },
   "author": {
     "url": "https://vitorluizc.github.io/",

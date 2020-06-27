@@ -32,7 +32,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VitorLuizC/bitty.git"
+    "url": "git+https://github.com/VitorLuizC/bitty.git",
+    "directory": "packages/either"
   },
   "author": {
     "url": "https://vitorluizc.github.io/",
