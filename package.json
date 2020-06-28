@@ -2,9 +2,10 @@
   "name": "@bitty/root",
   "private": true,
   "scripts": {
-    "test": "pnpm --filter ./packages run test"
+    "test": "pnpm --filter ./packages run test",
+    "build": "pnpm run build -r"
   },
   "devDependencies": {
-    "pnpm": "^5.1.4"
+    "pnpm": "^5.2.6"
   }
 }

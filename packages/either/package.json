@@ -47,11 +47,11 @@
   "license": "MIT",
   "devDependencies": {
     "@bitty/nullish": "workspace:*",
-    "@rollup/plugin-node-resolve": "^8.0.0",
-    "ava": "^3.8.2",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "ava": "^3.9.0",
     "prettier": "^2.0.5",
-    "rollup": "^2.13.1",
+    "rollup": "^2.18.1",
     "rollup-plugin-terser": "^6.1.0",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   }
 }
