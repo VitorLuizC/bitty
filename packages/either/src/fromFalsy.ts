@@ -1,5 +1,6 @@
 import type Either from './Either.js';
-import type { Falsy, NonFalsy } from './Falsy.js';
+
+import isFalsy, { Falsy, NonFalsy } from '@bitty/falsy';
 
 import Left from './Left.js';
 import Right from './Right.js';
@@ -15,5 +16,5 @@ import Right from './Right.js';
  */
 export default function fromFalsy<L>(defaultValue: L) {
   return <R>(value?: Falsy | R): Either<L, NonFalsy<R>> =>
-    value ? Right(value as NonFalsy<R>) : Left(defaultValue);
+    isFalsy(value) ? Left(defaultValue) : Right(value as NonFalsy<R>);
 }

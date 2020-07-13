@@ -1,4 +1,5 @@
 devDependencies:
+  '@bitty/falsy': 'link:../falsy'
   '@bitty/nullish': 'link:../nullish'
   '@rollup/plugin-node-resolve': 8.1.0_rollup@2.18.1
   ava: 3.9.0
@@ -2153,6 +2154,7 @@ packages:
     resolution:
       integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
 specifiers:
+  '@bitty/falsy': 'workspace:*'
   '@bitty/nullish': 'workspace:*'
   '@rollup/plugin-node-resolve': ^8.1.0
   ava: ^3.9.0
