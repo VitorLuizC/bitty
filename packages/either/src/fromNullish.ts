@@ -11,7 +11,7 @@ import Right from './Right.js';
  * returns a `Left` with the received default value, otherwise a `Right` with
  * non-nullish value.
  * @param {L} defaultValue - The value used as `Left` if value is nullish.
- * @returns {function(R | null | undefined | void): Either.<L, R>}
+ * @returns {function(R | Nullish): Either.<L, R>}
  * @template L, R
  */
 export default function fromNullish<L>(defaultValue: L) {
