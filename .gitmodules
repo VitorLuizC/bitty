@@ -4,3 +4,6 @@
 [submodule "packages/format-date"]
 	path = packages/format-date
 	url = git@github.com:VitorLuizC/format-date.git
+[submodule "packages/maybe"]
+	path = packages/maybe
+	url = git@github.com:VitorLuizC/maybe.git
