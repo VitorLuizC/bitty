@@ -3,11 +3,12 @@ import test from 'ava';
 import fromNullish from './fromNullish.js';
 
 test('fromNullish returns `Left` for nullish values', (context) => {
-  const fromNull = fromNullish(new Error('Not defined'))(null);
-  const fromUndefined = fromNullish(new Error('Not defined'))(undefined);
+  const from = fromNullish(new Error('Not defined'));
 
-  context.true(fromNull.isLeft());
-  context.true(fromUndefined.isLeft());
+  context.true(from().isLeft());
+  context.true(from(null).isLeft());
+  context.true(from(undefined).isLeft());
+  context.true(from(undefined as void).isLeft());
 });
 
 test('fromNullish returns `Right` for non-nullish values', (context) => {
@@ -19,11 +20,10 @@ test('fromNullish returns `Right` for non-nullish values', (context) => {
 test('fromNullish uses default value as returned `Left` for nullish values', (context) => {
   const DEFAULT_VALUE = Math.random();
 
-  const fromNull = fromNullish(DEFAULT_VALUE)(null);
-  const fromUndefined = fromNullish(DEFAULT_VALUE)(undefined);
+  const from = fromNullish(DEFAULT_VALUE);
 
-  context.is(fromNull.unwrap(), DEFAULT_VALUE);
-  context.is(fromUndefined.unwrap(), DEFAULT_VALUE);
+  context.is(from(null).unwrap(), DEFAULT_VALUE);
+  context.is(from(undefined).unwrap(), DEFAULT_VALUE);
 });
 
 test('fromNullish uses value as returned `Right` for non-nullish values', (context) => {
