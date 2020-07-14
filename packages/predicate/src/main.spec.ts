@@ -1,5 +1,5 @@
 import test from 'ava';
-import type { Predicate, Refinement } from '.';
+import type { Predicate, Refinement } from './main';
 
 test('Predicate is a function that receives a value and returns boolean', (context) => {
   type Assert<T, T2> = T2 extends T ? true : false;
