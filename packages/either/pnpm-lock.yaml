@@ -1,6 +1,8 @@
-devDependencies:
+dependencies:
   '@bitty/falsy': 'link:../falsy'
   '@bitty/nullish': 'link:../nullish'
+  '@bitty/predicate': 'link:../predicate'
+devDependencies:
   '@rollup/plugin-node-resolve': 8.4.0_rollup@2.21.0
   ava: 3.10.1
   prettier: 2.0.5
@@ -2136,8 +2138,9 @@ packages:
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
 specifiers:
-  '@bitty/falsy': 'workspace:*'
-  '@bitty/nullish': 'workspace:*'
+  '@bitty/falsy': 'workspace:^0.0.0'
+  '@bitty/nullish': 'workspace:^0.0.3'
+  '@bitty/predicate': 'workspace:^0.0.0'
   '@rollup/plugin-node-resolve': ^8.4.0
   ava: ^3.10.1
   prettier: ^2.0.5

@@ -46,13 +46,16 @@
   "homepage": "https://github.com/VitorLuizC/bitty/tree/master/packages/pipe",
   "license": "MIT",
   "devDependencies": {
-    "@bitty/falsy": "workspace:*",
-    "@bitty/nullish": "workspace:*",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "ava": "^3.10.1",
     "prettier": "^2.0.5",
     "rollup": "^2.21.0",
     "rollup-plugin-terser": "^6.1.0",
     "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@bitty/falsy": "workspace:*",
+    "@bitty/nullish": "workspace:*",
+    "@bitty/predicate": "workspace:*"
   }
 }
