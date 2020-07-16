@@ -5,7 +5,7 @@
   "sideEffects": false,
   "cdn": "dist/Either.umd.js",
   "main": "dist/Either.js",
-  "types": "types/Either.d.ts",
+  "types": "types/index.d.ts",
   "unpkg": "dist/Either.umd.js",
   "module": "dist/Either.esm.js",
   "jsdelivr": "dist/Either.umd.js",
