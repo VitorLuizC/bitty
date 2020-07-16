@@ -60,10 +60,10 @@ const decodeAuthenticationJWT = (token: string) =>
     () => new SignInError(SignInErrorCodeEnum.JWT_INVALID),
   );
 
-const wasJWTExpired = (payload: JWTPayload) =>
+const wasNotJWTExpired = (payload: JWTPayload) =>
   isNullish(payload.exp) || payload.exp > Date.now() / 1000;
 
-const checkJWTExpiration = Either.fromPredicate(wasJWTExpired, (payload) => {
+const checkJWTExpiration = Either.fromPredicate(wasNotJWTExpired, (payload) => {
   const date = new Date(payload.exp! * 1000);
   return new SignInError(
     SignInErrorCodeEnum.JWT_EXPIRED,
