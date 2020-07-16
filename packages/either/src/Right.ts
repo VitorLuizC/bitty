@@ -16,6 +16,7 @@ interface Right<L, R> extends EitherMethods<L, R> {
 function Right<L = never, R = never>(value: R): Right<L, R> {
   return {
     _kind: 'Right',
+    alt: () => Right(value),
     map: (fn) => Right(fn(value)),
     then: (fn) => {
       const valueOrEither = fn(value);

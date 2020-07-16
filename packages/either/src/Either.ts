@@ -9,6 +9,8 @@ export type EitherPattern<L, R, T> = {
 };
 
 export interface EitherMethods<L, R> {
+  alt(fn: () => Either<L, R>): Either<L, R>;
+
   map<R2>(fn: (value: R) => R2): Either<L, R2>;
 
   then<R2>(fn: (value: R) => R2 | Either<L, R2>): Either<L, R2>;

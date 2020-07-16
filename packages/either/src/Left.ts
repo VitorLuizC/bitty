@@ -14,6 +14,7 @@ interface Left<L, R> extends EitherMethods<L, R> {
 function Left<L = never, R = never>(value: L): Left<L, R> {
   return {
     _kind: 'Left',
+    alt: (fn) => fn(),
     map: () => Left(value),
     then: () => Left(value),
     chain: () => Left(value),
