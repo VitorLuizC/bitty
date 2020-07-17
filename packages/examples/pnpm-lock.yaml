@@ -8,7 +8,7 @@ dependencies:
 devDependencies:
   ava: 3.10.1
   prettier: 2.0.5
-  typescript: 3.9.6
+  typescript: 3.9.7
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.4:
@@ -82,7 +82,7 @@ packages:
   /@types/glob/7.1.3:
     dependencies:
       '@types/minimatch': 3.0.3
-      '@types/node': 14.0.22
+      '@types/node': 14.0.23
     dev: true
     resolution:
       integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
@@ -94,10 +94,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
-  /@types/node/14.0.22:
+  /@types/node/14.0.23:
     dev: true
     resolution:
-      integrity: sha512-emeGcJvdiZ4Z3ohbmw93E/64jRzUHAItSHt8nF7M4TGgQTiWqFVGB8KNpLGFmUHmHLvjvBgFwVlqNcq+VuGv9g==
+      integrity: sha512-Z4U8yDAl5TFkmYsZdFPdjeMa57NOvnaf1tljHzhouaPEp7LCj2JKkejpI1ODviIAQuW4CcQmxkQ77rnLsOOoKw==
   /@types/normalize-package-data/2.4.0:
     dev: true
     resolution:
@@ -226,7 +226,7 @@ packages:
       arrify: 2.0.1
       callsites: 3.1.0
       chalk: 4.1.0
-      chokidar: 3.4.0
+      chokidar: 3.4.1
       chunkd: 2.0.1
       ci-info: 2.0.0
       ci-parallel-vars: 1.0.1
@@ -381,7 +381,7 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
-  /chokidar/3.4.0:
+  /chokidar/3.4.1:
     dependencies:
       anymatch: 3.1.1
       braces: 3.0.2
@@ -396,7 +396,7 @@ packages:
     optionalDependencies:
       fsevents: 2.1.3
     resolution:
-      integrity: sha512-aXAaho2VJtisB/1fg1+3nlLJqGOuewTzQpd/Tz0yTg2R0e4IGtshYvtjowyEumcBv2z+y4+kc75Mz7j5xJskcQ==
+      integrity: sha512-TQTJyr2stihpC4Sya9hs2Xh+O2wf+igjL36Y75xx2WdHuiICcn/XJza46Jwt0eT5hVpQOzo3FpY3cj3RVYLX0g==
   /chunkd/2.0.1:
     dev: true
     resolution:
@@ -1387,7 +1387,7 @@ packages:
   /package-json/6.5.0:
     dependencies:
       got: 9.6.0
-      registry-auth-token: 4.1.1
+      registry-auth-token: 4.2.0
       registry-url: 5.1.0
       semver: 6.3.0
     dev: true
@@ -1551,14 +1551,14 @@ packages:
       node: '>=8.10.0'
     resolution:
       integrity: sha512-0xe001vZBnJEK+uKcj8qOhyAKPzIT+gStxWr3LCB0DwcXR5NZJ3IaC+yGnHCYzB/S7ov3m3EEbZI2zeNvX+hGQ==
-  /registry-auth-token/4.1.1:
+  /registry-auth-token/4.2.0:
     dependencies:
       rc: 1.2.8
     dev: true
     engines:
       node: '>=6.0.0'
     resolution:
-      integrity: sha512-9bKS7nTl9+/A1s7tnPeGrUpRcVY+LUh7bfFgzpndALdPfXQBfQV77rQVtqgUV3ti4vc/Ik81Ex8UJDWDQ12zQA==
+      integrity: sha512-P+lWzPrsgfN+UEpDS3U8AQKg/UjZX6mQSJueZj3EK+vNESoqBSpBUD3gmu4sF9lOsjXWjF11dQKUqemf3veq1w==
   /registry-url/5.1.0:
     dependencies:
       rc: 1.2.8
@@ -1882,13 +1882,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
-  /typescript/3.9.6:
+  /typescript/3.9.7:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-Pspx3oKAPJtjNwE92YS05HQoY7z2SFyOpHo9MqJor3BXAGNaPUs83CuVp9VISFkSjyRfiTpmKuAYGJB7S7hOxw==
+      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
   /unique-string/2.0.0:
     dependencies:
       crypto-random-string: 2.0.0
@@ -2025,4 +2025,4 @@ specifiers:
   ava: ^3.10.1
   jwt-decode: ^2.2.0
   prettier: ^2.0.5
-  typescript: ^3.9.6
+  typescript: ^3.9.7

@@ -29,7 +29,7 @@
   "devDependencies": {
     "ava": "^3.10.1",
     "prettier": "^2.0.5",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
     "@bitty/either": "workspace:*",
