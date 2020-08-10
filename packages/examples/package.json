@@ -27,7 +27,7 @@
   "homepage": "https://github.com/VitorLuizC/bitty/tree/master/packages/examples",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^3.10.1",
+    "ava": "^3.11.1",
     "prettier": "^2.0.5",
     "typescript": "^3.9.7"
   },
