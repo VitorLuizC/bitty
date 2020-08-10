@@ -37,9 +37,6 @@
     "build:bundle": "rollup --config rollup.config.js",
     "prepublishOnly": "pnpm run test && pnpm run build"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VitorLuizC/bitty.git",
