@@ -81,7 +81,7 @@ const getUserById = (userId: string): Promise<User> =>
     .then((response) => response.json())
     .catch((error) => {
       const message = String(error?.message);
-      return new SignInError(SignInErrorCodeEnum.CANT_GET_USER, message),
+      return new SignInError(SignInErrorCodeEnum.CANT_GET_USER, message);
     });
 
 const getAuthenticatedUser = () =>
