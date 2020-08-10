@@ -1,6 +1,6 @@
 {
   "name": "@bitty/json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Types and type-safe functions for JSON.",
   "sideEffects": false,
   "cdn": "dist/json.umd.js",
