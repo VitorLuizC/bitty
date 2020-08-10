@@ -1,6 +1,6 @@
 {
   "name": "@bitty/falsy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Falsy helper functions and types for TypeScript.",
   "sideEffects": false,
   "cdn": "dist/main.umd.js",
