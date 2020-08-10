@@ -9,4 +9,4 @@
 	url = git@github.com:VitorLuizC/maybe.git
 [submodule "packages/create-request"]
 	path = packages/create-request
-	url = git@github.com:VitorLuizC/intereq.git
+	url = git@github.com:VitorLuizC/create-request.git
