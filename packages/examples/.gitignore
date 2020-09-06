@@ -1,9 +1,0 @@
-# Bundled modules and their source-maps.
-dist/
-
-# Generated type declarations.
-types/
-
-# Transpiled modules and their source-maps.
-src/**/*.js
-src/**/*.js.map
