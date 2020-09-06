@@ -4,7 +4,9 @@ dependencies:
   '@bitty/predicate': 'link:../predicate'
 devDependencies:
   '@rollup/plugin-node-resolve': 8.4.0_rollup@2.23.1
+  '@types/jwt-decode': 2.2.1
   ava: 3.11.1
+  jwt-decode: 2.2.0
   prettier: 2.0.5
   rollup: 2.23.1
   rollup-plugin-terser: 7.0.0_rollup@2.23.1
@@ -120,6 +122,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
+  /@types/jwt-decode/2.2.1:
+    dev: true
+    resolution:
+      integrity: sha512-aWw2YTtAdT7CskFyxEX2K21/zSDStuf/ikI3yBqmwpwJF0pS+/IX5DWv+1UFffZIbruP6cnT9/LAJV1gFwAT1A==
   /@types/minimatch/3.0.3:
     dev: true
     resolution:
@@ -1183,6 +1189,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-mrqyZKfX5EhL7hvqcV6WG1yYjnjeuYDzDhhcAAUrq8Po85NBQBJP+ZDUT75qZQ98IkUoBqdkExkukOU7Ts2wrw==
+  /jwt-decode/2.2.0:
+    dev: true
+    resolution:
+      integrity: sha1-fYa9VmefWM5qhHBKZX3TkruoGnk=
   /keyv/3.1.0:
     dependencies:
       json-buffer: 3.0.0
@@ -2143,7 +2153,9 @@ specifiers:
   '@bitty/nullish': 'workspace:*'
   '@bitty/predicate': 'workspace:*'
   '@rollup/plugin-node-resolve': ^8.4.0
+  '@types/jwt-decode': ^2.2.1
   ava: ^3.11.1
+  jwt-decode: ^2.2.0
   prettier: ^2.0.5
   rollup: ^2.23.1
   rollup-plugin-terser: ^7.0.0
