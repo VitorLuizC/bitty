@@ -9,7 +9,7 @@ node_modules/
 
 # NPM's lockfiles.
 # We're using PNPM and it provides its own lockfile.
-npm-lockfile.json
+package-lock.json
 npm-shrinkwrap.json‎
 
 # Yarn's lockfile
