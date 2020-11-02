@@ -1,13 +1,13 @@
 devDependencies:
-  pnpm: 5.9.3
+  pnpm: 5.10.4
 lockfileVersion: 5.1
 packages:
-  /pnpm/5.9.3:
+  /pnpm/5.10.4:
     dev: true
     engines:
       node: '>=10.16'
     hasBin: true
     resolution:
-      integrity: sha512-MyN/jR/WfM7SPnnrkaEoQ2+cOhoSAnhzJ2sDOF7yZKyjh0sYuvGcijeZYbyWJ0r5C0vtBPV5SRtiLaHvwYWZBg==
+      integrity: sha512-HWtg7vrXpNNCeroOc0IhsoNdwPmga/N7Nci/Mc9SadHrkMXPNpkFXCHT3g9e4HqtGlbDX2K30WKvYQu2umdM+w==
 specifiers:
-  pnpm: ^5.9.3
+  pnpm: ^5.10.4
