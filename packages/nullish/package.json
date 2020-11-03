@@ -1,6 +1,6 @@
 {
   "name": "@bitty/nullish",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Nullish helper functions and types for TypeScript.",
   "sideEffects": false,
   "cdn": "./dist/main.umd.min.js",
