@@ -27,6 +27,10 @@ const options = {
       format: 'esm',
     }),
     Option({
+      file: './dist/main.mjs',
+      format: 'esm',
+    }),
+    Option({
       file: './dist/main.umd.js',
       name: 'isNullish',
       format: 'umd',
