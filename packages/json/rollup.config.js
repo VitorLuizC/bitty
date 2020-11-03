@@ -27,6 +27,10 @@ const options = {
       format: 'esm',
     }),
     Option({
+      file: './dist/json.mjs',
+      format: 'esm',
+    }),
+    Option({
       file: './dist/json.umd.js',
       name: 'Json',
       format: 'umd',

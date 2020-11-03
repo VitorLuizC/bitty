@@ -3,13 +3,23 @@
   "version": "0.0.4",
   "description": "Types and type-safe functions for JSON.",
   "sideEffects": false,
-  "cdn": "dist/json.umd.js",
-  "main": "dist/json.js",
-  "types": "types/json.d.ts",
-  "unpkg": "dist/json.umd.js",
-  "module": "dist/json.esm.js",
-  "jsdelivr": "dist/json.umd.js",
-  "umd:main": "dist/json.umd.js",
+  "cdn": "./dist/json.umd.js",
+  "main": "./dist/json.js",
+  "types": "./types/json.d.ts",
+  "unpkg": "./dist/json.umd.js",
+  "module": "./dist/json.esm.js",
+  "jsdelivr": "./dist/json.umd.js",
+  "umd:main": "./dist/json.umd.js",
+  "exports": {
+    ".": [
+      {
+        "import": "./dist/json.mjs",
+        "require": "./dist/json.js",
+        "default": "./dist/json.js"
+      },
+      "./dist/json.js"
+    ]
+  },
   "files": [
     "dist/",
     "types/"
