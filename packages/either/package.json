@@ -3,13 +3,23 @@
   "version": "0.0.7",
   "description": "Either monad implementation.",
   "sideEffects": false,
-  "cdn": "dist/Either.umd.js",
-  "main": "dist/Either.js",
-  "types": "types/index.d.ts",
-  "unpkg": "dist/Either.umd.js",
-  "module": "dist/Either.esm.js",
-  "jsdelivr": "dist/Either.umd.js",
-  "umd:main": "dist/Either.umd.js",
+  "cdn": "./dist/Either.umd.js",
+  "main": "./dist/Either.js",
+  "types": "./types/index.d.ts",
+  "unpkg": "./dist/Either.umd.js",
+  "module": "./dist/Either.esm.js",
+  "jsdelivr": "./dist/Either.umd.js",
+  "umd:main": "./dist/Either.umd.js",
+  "exports": {
+    ".": [
+      {
+        "import": "./dist/Either.mjs",
+        "require": "./dist/Either.js",
+        "default": "./dist/Either.js"
+      },
+      "./dist/Either.js"
+    ]
+  },
   "files": [
     "dist/",
     "types/"

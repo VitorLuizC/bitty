@@ -29,6 +29,10 @@ const options = {
       format: 'esm',
     }),
     Option({
+      file: './dist/Either.mjs',
+      format: 'esm',
+    }),
+    Option({
       file: './dist/Either.umd.js',
       name: 'Either',
       format: 'umd',
