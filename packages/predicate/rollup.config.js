@@ -27,13 +27,17 @@ const options = {
       format: 'esm',
     }),
     Option({
+      file: './dist/main.mjs',
+      format: 'esm',
+    }),
+    Option({
       file: './dist/main.umd.js',
-      name: 'isNullish',
+      name: 'Predicate',
       format: 'umd',
     }),
     Option({
       file: './dist/main.umd.min.js',
-      name: 'isNullish',
+      name: 'Predicate',
       format: 'umd',
       plugins: [terser()],
     }),
