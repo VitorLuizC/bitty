@@ -27,6 +27,10 @@ const options = {
       format: 'esm',
     }),
     Option({
+      file: './dist/pipe.mjs',
+      format: 'esm',
+    }),
+    Option({
       file: './dist/pipe.umd.js',
       name: 'pipe',
       format: 'umd',

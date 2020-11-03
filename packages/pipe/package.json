@@ -3,13 +3,23 @@
   "version": "0.0.7",
   "description": "A pipe function to perform function composition in LTR (Left To Right) direction.",
   "sideEffects": false,
-  "cdn": "dist/pipe.umd.js",
-  "main": "dist/pipe.js",
-  "types": "types/pipe.d.ts",
-  "unpkg": "dist/pipe.umd.js",
-  "module": "dist/pipe.esm.js",
-  "jsdelivr": "dist/pipe.umd.js",
-  "umd:main": "dist/pipe.umd.js",
+  "cdn": "./dist/pipe.umd.js",
+  "main": "./dist/pipe.js",
+  "types": "./types/pipe.d.ts",
+  "unpkg": "./dist/pipe.umd.js",
+  "module": "./dist/pipe.esm.js",
+  "jsdelivr": "./dist/pipe.umd.js",
+  "umd:main": "./dist/pipe.umd.js",
+  "exports": {
+    ".": [
+      {
+        "import": "./dist/pipe.mjs",
+        "require": "./dist/pipe.js",
+        "default": "./dist/pipe.js"
+      },
+      "./dist/pipe.js"
+    ]
+  },
   "files": [
     "dist/",
     "types/"
