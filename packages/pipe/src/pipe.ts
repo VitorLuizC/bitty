@@ -1,11 +1,9 @@
 /**
  * Performs function composition in LTR (Left To Right) direction.
  *
- * `pipe` supports N arguments. But its types support only 10 because TypeScript
- * doesn't support **Variadic Kinds** and we explicitly have to define the type
- * of all the possible usages as method overloads.
- *
- * https://github.com/microsoft/TypeScript/issues/5453
+ * Our `pipe` implementation supports N arguments. But you can use only 10 in
+ * TypeScript, because it doesn't support **Variadic Kinds** and we explicitly
+ * have to define the type of all the possible usages as method overloads.
  *
  * @example
  * const normalizeWhiteSpaces = text => name.replace(/\s+/g, ' ').trim();
@@ -18,6 +16,7 @@
  *
  * getInitials('Vitor Luiz Cavalcanti');
  * //=> "VLC"
+ *
  * @param fn - An arity N function. Its result is the argument of next one.
  * @param fns - Functions of arity 1. Each one's result is next's argument.
  */
@@ -44,6 +43,7 @@ export default function pipe<Args extends unknown[], T0, T1, T2, T3, T4, T5, T6,
 
 /**
  * Performs function composition in LTR (Left To Right) direction.
+ *
  * @example
  * const normalizeWhiteSpaces = text => name.replace(/\s+/g, ' ').trim();
  *
@@ -55,11 +55,13 @@ export default function pipe<Args extends unknown[], T0, T1, T2, T3, T4, T5, T6,
  *
  * getInitials('Vitor Luiz Cavalcanti');
  * //=> "VLC"
+ *
  * @param {Function} fn - An arity N function. Its result is the argument of next one.
  * @param {...Function[]} fns - Functions of arity 1. Each one's result is next's argument.
  * @returns {Function}
  */
-export default function pipe(fn: Function, ...fns: Function[]) {
+export default function pipe(fn: Function) {
+  const fns = [].slice.call(arguments, 1) as Function[];
   return function () {
     return fns.reduce((x, fn) => fn(x), fn.apply(null, arguments));
   };
