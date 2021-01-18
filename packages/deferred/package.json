@@ -1,0 +1,77 @@
+{
+  "name": "@bitty/deferred",
+  "version": "0.0.0",
+  "description": "It provides a function to create Deferred objects. They contains a Promise and methods to imperatively resolve or reject it.",
+  "sideEffects": false,
+  "cdn": "./dist/main.umd.min.js",
+  "main": "./dist/main.js",
+  "types": "./types/main.d.ts",
+  "unpkg": "./dist/main.umd.min.js",
+  "module": "./dist/main.esm.js",
+  "jsdelivr": "./dist/main.umd.min.js",
+  "umd:main": "./dist/main.umd.js",
+  "exports": {
+    ".": [
+      {
+        "import": "./dist/main.mjs",
+        "require": "./dist/main.js",
+        "default": "./dist/main.js"
+      },
+      "./dist/main.js"
+    ]
+  },
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "keywords": [
+    "deferred",
+    "deferreds",
+    "promise",
+    "promises",
+    "promises-a",
+    "Promises/A+",
+    "promises-aplus",
+    "future",
+    "futures",
+    "resolve",
+    "reject",
+    "async",
+    "asynchronous",
+    "flow",
+    "flow control",
+    "typescript"
+  ],
+  "scripts": {
+    "test": "pnpm run test:code-style && pnpm run test:unit",
+    "test:transpile": "tsc --project ./tsconfig.test.json",
+    "test:unit": "pnpm run test:transpile && ava",
+    "test:code-style": "prettier --check \"./src/**/*.ts\"",
+    "build": "pnpm run build:transpile && pnpm run build:bundle",
+    "build:transpile": "tsc --project ./tsconfig.build.json",
+    "build:bundle": "rollup --config rollup.config.js",
+    "prepublishOnly": "pnpm run test && pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/bitty.git",
+    "directory": "packages/deferred"
+  },
+  "author": {
+    "url": "https://vitorluizc.github.io/",
+    "name": "Vitor Luiz Cavalcanti",
+    "email": "vitorluizc@outlook.com"
+  },
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/bitty/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/bitty/tree/master/packages/deferred",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "prettier": "^2.2.1",
+    "rollup": "^2.36.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.1.3"
+  }
+}
