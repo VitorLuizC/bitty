@@ -5,7 +5,7 @@ export type { Deferred };
 type State<T> =
   | { status: 'PENDING' }
   | { status: 'RESOLVED'; value: T | PromiseLike<T> }
-  | { status: 'REJECTED'; reason: unknown };
+  | { status: 'REJECTED'; reason?: unknown };
 
 /**
  * Creates a `Deferred` object that provides a new promise along with methods to

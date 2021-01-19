@@ -8,7 +8,7 @@
 export default interface Deferred<T> {
   readonly promise: Promise<T>;
 
-  reject(reason: unknown): void;
+  reject(reason?: unknown): void;
 
   resolve(value: T | PromiseLike<T>): void;
 }
