@@ -6,7 +6,7 @@ export type { Deferred };
  * Creates a `Deferred` object that provides a new promise along with methods to
  * change its state.
  * @template T
- * @returns {import('./Deferred.js').default<T>}
+ * @returns {Deferred.<T>}
  */
 export default function createDeferred<T>(): Deferred<T> {
   let reject: (reason?: unknown) => void;
