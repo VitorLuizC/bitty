@@ -2,11 +2,6 @@ import type Deferred from './Deferred.js';
 
 export type { Deferred };
 
-type State<T> =
-  | { status: 'PENDING' }
-  | { status: 'RESOLVED'; value: T | PromiseLike<T> }
-  | { status: 'REJECTED'; reason?: unknown };
-
 /**
  * Creates a `Deferred` object that provides a new promise along with methods to
  * change its state.
@@ -14,41 +9,21 @@ type State<T> =
  * @returns {import('./Deferred.js').default<T>}
  */
 export default function createDeferred<T>(): Deferred<T> {
-  let state: State<T> = {
-    status: 'PENDING',
-  };
+  let reject: (reason?: unknown) => void;
+  let resolve: (value: T | PromiseLike<T>) => void;
 
-  const deferred: Deferred<T> = {
-    promise: new Promise<T>((resolve, reject) => {
-      switch (state.status) {
-        case 'REJECTED':
-          reject(state.reason);
-          break;
-        case 'RESOLVED':
-          resolve(state.value);
-          break;
-        default:
-          deferred.reject = reject;
-          deferred.resolve = resolve;
-      }
+  return {
+    promise: new Promise<T>((_resolve, _reject) => {
+      reject = _reject;
+      resolve = _resolve;
     }),
 
-    // A placeholder method that fix reject call right after deferred creation.
-    reject(reason) {
-      state = {
-        reason,
-        status: 'REJECTED',
-      };
-    },
+    // reject was assigned, because Promise initialization is eager (sync).
+    // @ts-expect-error
+    reject,
 
-    // A placeholder method that fix resolve call right after deferred creation.
-    resolve(value) {
-      state = {
-        value,
-        status: 'RESOLVED',
-      };
-    },
+    // resolve was assigned, because Promise initialization is eager (sync).
+    // @ts-expect-error
+    resolve,
   };
-
-  return deferred;
 }
