@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "lib": ["ES5", "ES2015.Promise"]
+    "lib": ["ES5", "ES2015.Promise"],
+    "types": ["node"]
   }
 }
