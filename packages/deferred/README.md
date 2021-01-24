@@ -3,7 +3,7 @@
 [![Bundle minified size](https://badgen.net/bundlephobia/min/@bitty/deferred)](https://bundlephobia.com/result?p=@bitty/deferred)
 [![Bundle minified and gzipped size](https://badgen.net/bundlephobia/minzip/@bitty/deferred)](https://bundlephobia.com/result?p=@bitty/deferred)
 
-It provides a function to create Deferred objects. They contains a Promise and methods to imperatively resolve or reject it.
+It provides a function to create [Deferred](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Deferred) objects. They contain a Promise and methods to imperatively resolve or reject it.
 
 - 📦 Distributions in ESM, CommonJS, UMD and UMD _minified_ formats.
 
@@ -89,7 +89,7 @@ deferred.reject(new Error('The account number is invalid.'));
 //=> Won't log anything because promise is already resolved.
 ```
 
-We also exports `Deferred` interface. Which simply defines the promise property (an instance of `Promise`) and the methods that change it.
+We also export the `Deferred` interface. Which simply defines the promise property (an instance of `Promise`) and the methods that change it.
 
 ```ts
 interface Deferred<T> {
