@@ -16,19 +16,19 @@ A mono-repository with functional programming helpers, algebraic data types, uti
 
 Package | Description
 ------- | -----------
-[`@bitty/animate`](./packages/animate) | Create and manage animation functions with browser's AnimationFrame API.
-[`@bitty/create-request`](./packages/create-request) | Apply interceptors to `fetch` and create a custom request function.
-[`@bitty/deferred`](./packages/deferred) | It provides a function to create [Deferred](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Deferred) objects. They contain a Promise and methods to imperatively resolve or reject it.
-[`@bitty/either`](./packages/either) | An algebraic data type that represents a value of one of two possible types (a disjoint union).
-[`@bitty/event-emitter`](./packages/event-emitter) | Emit and listen events in any class, object or function without messing them extending classes.
-[`@bitty/falsy`](./packages/falsy) | Falsy helper functions and types for TypeScript.
-[`@bitty/format-date`](./packages/format-date) | A small library (around 400 B when gziped & minified) to format JavaScript `Date` object using same tokens as moment.
-[`@bitty/insistence`](./packages/insistence) | Insistently runs a callback and only resolves the promise when its result is truthy.
-[`@bitty/json`](./packages/json) | Types and type-safe functions for JSON.
-[`@bitty/maybe`](./packages/maybe) | An algebraic data type that is a container for an optional values.
-[`@bitty/nullish`](./packages/nullish) | Nullish helper functions and types for TypeScript.
-[`@bitty/pipe`](./packages/pipe) | A pipe function to perform function composition in LTR (Left-To-Right) direction.
-[`@bitty/predicate`](./packages/predicate) | `Predicate` and `Refinement` types for TypeScript.
+[`@bitty/animate`](./packages/animate/README.md) | Create and manage animation functions with browser's AnimationFrame API.
+[`@bitty/create-request`](./packages/create-request/README.md) | Apply interceptors to `fetch` and create a custom request function.
+[`@bitty/deferred`](./packages/deferred/README.md) | It provides a function to create [Deferred](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Deferred/README.md) objects. They contain a Promise and methods to imperatively resolve or reject it.
+[`@bitty/either`](./packages/either/README.md) | An algebraic data type that represents a value of one of two possible types (a disjoint union).
+[`@bitty/event-emitter`](./packages/event-emitter/README.md) | Emit and listen events in any class, object or function without messing them extending classes.
+[`@bitty/falsy`](./packages/falsy/README.md) | Falsy helper functions and types for TypeScript.
+[`@bitty/format-date`](./packages/format-date/README.md) | A small library (around 400 B when gziped & minified) to format JavaScript `Date` object using same tokens as moment.
+[`@bitty/insistence`](./packages/insistence/README.md) | Insistently runs a callback and only resolves the promise when its result is truthy.
+[`@bitty/json`](./packages/json/README.md) | Types and type-safe functions for JSON.
+[`@bitty/maybe`](./packages/maybe/README.md) | An algebraic data type that is a container for an optional values.
+[`@bitty/nullish`](./packages/nullish/README.md) | Nullish helper functions and types for TypeScript.
+[`@bitty/pipe`](./packages/pipe/README.md) | A pipe function to perform function composition in LTR (Left-To-Right) direction.
+[`@bitty/predicate`](./packages/predicate/README.md) | `Predicate` and `Refinement` types for TypeScript.
 
 ## License
 
