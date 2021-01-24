@@ -8,7 +8,7 @@ It provides a function to create [Deferred](https://developer.mozilla.org/en-US/
 - 📦 Distributions in ESM, CommonJS, UMD and UMD _minified_ formats.
 
 - ⚡ Lightweight:
-  - Weighs less than 0.1KB (min + gzip).
+  - Weighs less than 1KB (min + gzip).
   - Tree-shakeable.
   - Side-effects free.
 
