@@ -40,4 +40,25 @@ function toJson<T extends Json = Json>(value: T, space: string | number = 2) {
   return JSON.stringify(value, null, space);
 }
 
-export { Json, JsonArray, JsonObject, parseJson, toJson };
+/**
+ * An array that can only be read, containing valid JSON values
+ *
+ * @see {@link Json}
+ */
+type ReadonlyJsonArray<T extends Json = Json> = readonly T[];
+
+/**
+ * An object that can only be read, containing key and valid JSON values
+ *
+ * @see {@link Json}
+ */
+type ReadonlyJsonObject<T extends Json = Json> = {
+  readonly [key: string]: Readonly<T>;
+}
+
+/**
+ * An object that can only be read, containing key-value pairs and/or readonly arrays
+ */
+type ReadonlyJson<T extends Json = Json> = ReadonlyJsonArray<T> | ReadonlyJsonObject<T>
+
+export { Json, JsonArray, JsonObject, ReadonlyJson, ReadonlyJsonObject, ReadonlyJsonArray, parseJson, toJson };
