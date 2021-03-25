@@ -13,7 +13,7 @@ type Json = null | boolean | number | string | JsonArray | JsonObject;
 type JsonArray = Json[];
 
 /**
- * An object whose property keys are strings and values are types valid as JSON.
+ * An object whose property keys are strings and values are JSON valid types.
  *
  * @see {@link Json}
  */
