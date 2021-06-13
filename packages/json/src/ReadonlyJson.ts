@@ -1,8 +1,24 @@
-import type JsonPrimitive from './JsonPrimitive';
-import type ReadonlyJsonObject from "./ReadonlyJsonObject";
-import type ReadonlyJsonArray from "./ReadonlyJsonArray";
+import type { JsonPrimitive } from './Json';
 
-/** An union of primitive JSON types with read-only JSON array and object. */
+/**
+ * An union between {@link JsonPrimitive}, {@link ReadonlyJsonArray} and {@link ReadonlyJsonObject}.
+ */
 type ReadonlyJson = JsonPrimitive | ReadonlyJsonArray | ReadonlyJsonObject;
 
-export default ReadonlyJson;
+/**
+ * A read-only array with {@link ReadonlyJson} elements.
+ */
+type ReadonlyJsonArray = readonly ReadonlyJson[];
+
+/**
+ * An object with read-only properties whose keys are strings and values are {@link ReadonlyJson}.
+ */
+type ReadonlyJsonObject = {
+  readonly [key: string]: ReadonlyJson;
+};
+
+export type {
+  ReadonlyJson,
+  ReadonlyJsonArray,
+  ReadonlyJsonObject,
+};
