@@ -5,11 +5,11 @@ import type { ReadonlyJson } from './ReadonlyJson.js';
  * @param value - A {@link Json} value, usually an object or array.
  * @param space - A character or the number of spaces used for indentation.
  */
-function toJSONString<T extends ReadonlyJson = ReadonlyJson>(
+function toJSON<T extends ReadonlyJson = ReadonlyJson>(
   value: T,
   space: string | number = 2,
 ): string {
   return JSON.stringify(value, null, space);
 }
 
-export default toJSONString;
+export default toJSON;
