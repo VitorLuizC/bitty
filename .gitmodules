@@ -14,5 +14,5 @@
 	path = packages/event-emitter
 	url = git@github.com:VitorLuizC/event-emitter.git
 [submodule "packages/insistence"]
-	path = packages/insistence
+	path = packages/insist
 	url = git@github.com:VitorLuizC/insistence.git
