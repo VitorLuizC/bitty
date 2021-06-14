@@ -13,6 +13,6 @@
 [submodule "packages/event-emitter"]
 	path = packages/event-emitter
 	url = git@github.com:VitorLuizC/event-emitter.git
-[submodule "packages/insistence"]
+[submodule "packages/insist"]
 	path = packages/insist
-	url = git@github.com:VitorLuizC/insistence.git
+	url = git@github.com:VitorLuizC/insist.git
