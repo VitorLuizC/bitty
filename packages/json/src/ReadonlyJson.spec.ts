@@ -1,6 +1,10 @@
 import test from 'ava';
 import type { Json, JsonArray, JsonObject, JsonPrimitive } from './Json.js';
-import type { ReadonlyJson, ReadonlyJsonArray, ReadonlyJsonObject } from './ReadonlyJson.js';
+import type {
+  ReadonlyJson,
+  ReadonlyJsonArray,
+  ReadonlyJsonObject,
+} from './ReadonlyJson.js';
 
 type Assert<T, Expected> = T extends Expected ? true : false;
 
@@ -15,9 +19,9 @@ test('ReadonlyJson defines a read-only JSON type', (context) => {
     name: 'Vitor',
     items: [
       {
-        name: 'Magic Long Sword'
-      }
-    ]
+        name: 'Magic Long Sword',
+      },
+    ],
   };
 
   // @ts-expect-error
@@ -28,7 +32,7 @@ test('ReadonlyJson defines a read-only JSON type', (context) => {
 
   // @ts-expect-error
   user.items.push({
-    name: 'Magic Hat'
+    name: 'Magic Hat',
   });
 
   context.pass();
@@ -62,7 +66,7 @@ test('ReadonlyJsonArray defines a read-only JSON array', (context) => {
 
   // @ts-expect-error
   items.push({
-    name: 'Axe'
+    name: 'Axe',
   });
 
   context.pass();

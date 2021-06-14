@@ -6,5 +6,8 @@ test("fromJSON parses JSON string to 'Json'", (context) => {
     name: 'Santos Dumont',
   };
 
-  context.deepEqual(fromJSON<{ name: string }>('{ "name": "Santos Dumont" }'), expected);
+  context.deepEqual(
+    fromJSON<{ name: string }>('{ "name": "Santos Dumont" }'),
+    expected,
+  );
 });

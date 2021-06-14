@@ -20,9 +20,4 @@ type JsonObject = {
   [key: string]: Json;
 };
 
-export type {
-  Json,
-  JsonArray,
-  JsonObject,
-  JsonPrimitive,
-};
+export type { Json, JsonArray, JsonObject, JsonPrimitive };

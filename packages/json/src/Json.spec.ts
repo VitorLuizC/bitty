@@ -93,9 +93,9 @@ test('JsonObject matches an object with primitive JSON types', (context) => {
 });
 
 test("JsonObject doesn't match objects of non-JSON types", (context) => {
-  const valid_0: Assert<{ value: bigint; }, JsonObject> = false;
-  const valid_1: Assert<{ id: symbol; }, JsonObject> = false;
-  const valid_2: Assert<{ name?: string; }[], JsonObject> = false;
+  const valid_0: Assert<{ value: bigint }, JsonObject> = false;
+  const valid_1: Assert<{ id: symbol }, JsonObject> = false;
+  const valid_2: Assert<{ name?: string }[], JsonObject> = false;
 
   context.false(valid_0);
   context.false(valid_1);
@@ -134,7 +134,7 @@ test("JsonPrimitive matches 'number' and its sub-types", (context) => {
 
 test("JsonPrimitive matches 'string' and its sub-types", (context) => {
   const valid_0: Assert<string, JsonPrimitive> = true;
-  const valid_1: Assert<"JSON is better than XML", JsonPrimitive> = true;
+  const valid_1: Assert<'JSON is better than XML', JsonPrimitive> = true;
 
   context.true(valid_0);
   context.true(valid_1);

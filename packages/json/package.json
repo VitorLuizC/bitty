@@ -40,8 +40,9 @@
     "functional"
   ],
   "scripts": {
-    "test": "pnpm run test:code-style && pnpm run test:unit",
-    "test:code-style": "prettier --check \"./src/**/*.ts\"",
+    "test": "pnpm run lint && pnpm run test:unit",
+    "lint": "prettier --check \"./src/**/*.ts\"",
+    "lint:fix": "prettier --write \"./src/**/*.ts\"",
     "test:transpile": "tsc --project ./tsconfig.test.json",
     "test:unit": "pnpm run test:transpile && ava",
     "build": "pnpm run build:transpile && pnpm run build:bundle",

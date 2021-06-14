@@ -17,8 +17,4 @@ type ReadonlyJsonObject = {
   readonly [key: string]: ReadonlyJson;
 };
 
-export type {
-  ReadonlyJson,
-  ReadonlyJsonArray,
-  ReadonlyJsonObject,
-};
+export type { ReadonlyJson, ReadonlyJsonArray, ReadonlyJsonObject };
