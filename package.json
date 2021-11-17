@@ -6,6 +6,6 @@
     "build": "pnpm run build -r"
   },
   "devDependencies": {
-    "pnpm": "^5.15.3"
+    "pnpm": "^6.22.2"
   }
 }
