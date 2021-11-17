@@ -11,10 +11,10 @@ importers:
   packages/animate:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -24,10 +24,10 @@ importers:
 
   packages/create-request:
     specifiers:
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       prettier: 2.4.1
       rollup: 2.60.0
@@ -37,10 +37,10 @@ importers:
   packages/deferred:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -53,20 +53,20 @@ importers:
       '@bitty/falsy': workspace:*
       '@bitty/nullish': workspace:*
       '@bitty/predicate': workspace:*
-      '@rollup/plugin-node-resolve': ^11.1.0
+      '@rollup/plugin-node-resolve': ^13.0.6
       '@types/jwt-decode': ^3.1.0
       ava: ^3.15.0
       jwt-decode: ^3.1.2
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     dependencies:
       '@bitty/falsy': link:../falsy
       '@bitty/nullish': link:../nullish
       '@bitty/predicate': link:../predicate
     devDependencies:
-      '@rollup/plugin-node-resolve': 11.2.1_rollup@2.60.0
+      '@rollup/plugin-node-resolve': 13.0.6_rollup@2.60.0
       '@types/jwt-decode': 3.1.0
       ava: 3.15.0
       jwt-decode: 3.1.2
@@ -78,10 +78,10 @@ importers:
   packages/event-emitter:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -92,10 +92,10 @@ importers:
   packages/falsy:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -106,10 +106,10 @@ importers:
   packages/format-date:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -120,10 +120,10 @@ importers:
   packages/insist:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.3.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -134,10 +134,10 @@ importers:
   packages/json:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -150,16 +150,16 @@ importers:
       '@bitty/falsy': workspace:*
       '@bitty/nullish': workspace:*
       '@bitty/predicate': workspace:*
-      '@rollup/plugin-node-resolve': ^11.1.0
-      rollup: ^2.38.0
+      '@rollup/plugin-node-resolve': ^13.0.6
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     dependencies:
       '@bitty/falsy': link:../falsy
       '@bitty/nullish': link:../nullish
       '@bitty/predicate': link:../predicate
     devDependencies:
-      '@rollup/plugin-node-resolve': 11.2.1_rollup@2.60.0
+      '@rollup/plugin-node-resolve': 13.0.6_rollup@2.60.0
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
       typescript: 4.4.4
@@ -167,10 +167,10 @@ importers:
   packages/nullish:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -181,10 +181,10 @@ importers:
   packages/pipe:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -195,10 +195,10 @@ importers:
   packages/predicate:
     specifiers:
       ava: ^3.15.0
-      prettier: ^2.2.1
-      rollup: ^2.38.0
+      prettier: ^2.4.1
+      rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.1.3
+      typescript: ^4.4.4
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
@@ -257,11 +257,11 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@rollup/plugin-node-resolve/11.2.1_rollup@2.60.0:
-    resolution: {integrity: sha512-yc2n43jcqVyGE2sqV5/YCmocy9ArjVAP/BeXyTtADTBBX6V0e5UMqwO8CdQ0kzjb6zu5P1qMzsScCMRvE9OlVg==}
+  /@rollup/plugin-node-resolve/13.0.6_rollup@2.60.0:
+    resolution: {integrity: sha512-sFsPDMPd4gMqnh2gS0uIxELnoRUp5kBl5knxD2EO0778G1oOJv4G1vyT2cpWz75OU2jDVcXhjVUuTAczGyFNKA==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
-      rollup: ^1.20.0||^2.0.0
+      rollup: ^2.42.0
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.60.0
       '@types/resolve': 1.17.1
