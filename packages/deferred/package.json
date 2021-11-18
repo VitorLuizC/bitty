@@ -1,6 +1,6 @@
 {
   "name": "@bitty/deferred",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "It provides a function to create Deferred objects. They contains a Promise and methods to imperatively resolve or reject it.",
   "sideEffects": false,
   "cdn": "./dist/main.umd.min.js",
