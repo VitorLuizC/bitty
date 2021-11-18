@@ -14,25 +14,25 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/create-request:
     specifiers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/deferred:
     specifiers:
@@ -40,13 +40,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/either:
     specifiers:
@@ -54,26 +54,24 @@ importers:
       '@bitty/nullish': workspace:*
       '@bitty/predicate': workspace:*
       '@rollup/plugin-node-resolve': ^13.0.6
-      '@types/jwt-decode': ^3.1.0
       ava: ^3.15.0
       jwt-decode: ^3.1.2
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     dependencies:
       '@bitty/falsy': link:../falsy
       '@bitty/nullish': link:../nullish
       '@bitty/predicate': link:../predicate
     devDependencies:
       '@rollup/plugin-node-resolve': 13.0.6_rollup@2.60.0
-      '@types/jwt-decode': 3.1.0
       ava: 3.15.0
       jwt-decode: 3.1.2
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/event-emitter:
     specifiers:
@@ -81,13 +79,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/falsy:
     specifiers:
@@ -95,13 +93,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/format-date:
     specifiers:
@@ -109,13 +107,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/insist:
     specifiers:
@@ -123,13 +121,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/json:
     specifiers:
@@ -137,13 +135,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/maybe:
     specifiers:
@@ -153,7 +151,7 @@ importers:
       '@rollup/plugin-node-resolve': ^13.0.6
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     dependencies:
       '@bitty/falsy': link:../falsy
       '@bitty/nullish': link:../nullish
@@ -162,7 +160,7 @@ importers:
       '@rollup/plugin-node-resolve': 13.0.6_rollup@2.60.0
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/nullish:
     specifiers:
@@ -170,13 +168,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/pipe:
     specifiers:
@@ -184,13 +182,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
   packages/predicate:
     specifiers:
@@ -198,13 +196,13 @@ importers:
       prettier: ^2.4.1
       rollup: ^2.60.0
       rollup-plugin-terser: ^7.0.2
-      typescript: ^4.4.4
+      typescript: ^4.5.2
     devDependencies:
       ava: 3.15.0
       prettier: 2.4.1
       rollup: 2.60.0
       rollup-plugin-terser: 7.0.2_rollup@2.60.0
-      typescript: 4.4.4
+      typescript: 4.5.2
 
 packages:
 
@@ -300,13 +298,6 @@ packages:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
     dev: true
 
-  /@types/jwt-decode/3.1.0:
-    resolution: {integrity: sha512-tthwik7TKkou3mVnBnvVuHnHElbjtdbM63pdBCbZTirCt3WAdM73Y79mOri7+ljsS99ZVwUFZHLMxJuJnv/z1w==}
-    deprecated: This is a stub types definition. jwt-decode provides its own type definitions, so you do not need this installed.
-    dependencies:
-      jwt-decode: 3.1.2
-    dev: true
-
   /@types/node/16.11.7:
     resolution: {integrity: sha512-QB5D2sqfSjCmTuWcBWyJ+/44bcjO7VbjSbOE0ucoVbAsSNQc4Lt6QkgkVXkTDwkL4z/beecZNDvVX15D4P8Jbw==}
     dev: true
@@ -326,8 +317,8 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /acorn/8.5.0:
-    resolution: {integrity: sha512-yXbYeFy+jUuYd3/CDcg2NkIYE991XYX/bje7LmjJigUciaeO1JR4XxXgCIV1/Zc/dRuFEyw1L0pbA+qynJkW5Q==}
+  /acorn/8.6.0:
+    resolution: {integrity: sha512-U1riIR+lBSNi3IbxtaHOIKdH8sLFv3NYfNv8sg7ZsNhcfl4HF2++BfqqrNAxoCLQW1iiylOj76ecnaUxz+z9yw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -420,7 +411,7 @@ packages:
     hasBin: true
     dependencies:
       '@concordance/react': 2.0.0
-      acorn: 8.5.0
+      acorn: 8.6.0
       acorn-walk: 8.2.0
       ansi-styles: 5.2.0
       arrgv: 1.0.2
@@ -2060,8 +2051,8 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
-  /typescript/4.4.4:
-    resolution: {integrity: sha512-DqGhF5IKoBl8WNf8C1gu8q0xZSInh9j1kJJMqT3a94w1JzVaBU4EXOSMrz9yDqMT0xt3selp83fuFMQ0uzv6qA==}
+  /typescript/4.5.2:
+    resolution: {integrity: sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
