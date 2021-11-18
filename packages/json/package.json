@@ -5,7 +5,7 @@
   "sideEffects": false,
   "cdn": "./dist/json.umd.js",
   "main": "./dist/json.js",
-  "types": "./types/json.d.ts",
+  "types": "./types/main.d.ts",
   "unpkg": "./dist/json.umd.js",
   "module": "./dist/json.esm.js",
   "jsdelivr": "./dist/json.umd.js",
