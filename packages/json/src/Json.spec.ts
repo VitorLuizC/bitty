@@ -144,20 +144,20 @@ test("JsonPrimitive doesn't match 'undefined' and its sub-type 'void'", (context
   const valid_0: Assert<undefined, JsonPrimitive> = false;
   const valid_1: Assert<void, JsonPrimitive> = false;
 
-  context.true(valid_0);
-  context.true(valid_1);
+  context.false(valid_0);
+  context.false(valid_1);
 });
 
 test("JsonPrimitive doesn't match 'bigint' and its sub-types", (context) => {
   const valid_0: Assert<bigint, JsonPrimitive> = false;
   const valid_1: Assert<9999999999999999999999n, JsonPrimitive> = false;
 
-  context.true(valid_0);
-  context.true(valid_1);
+  context.false(valid_0);
+  context.false(valid_1);
 });
 
 test("JsonPrimitive doesn't match 'symbol'", (context) => {
   const valid: Assert<symbol, JsonPrimitive> = false;
 
-  context.true(valid);
+  context.false(valid);
 });
