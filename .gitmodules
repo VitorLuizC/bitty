@@ -16,3 +16,6 @@
 [submodule "packages/insist"]
 	path = packages/insist
 	url = git@github.com:VitorLuizC/insist.git
+[submodule "packages/get"]
+	path = packages/get
+	url = git@github.com:VitorLuizC/get.git
