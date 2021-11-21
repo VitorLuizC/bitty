@@ -6,4 +6,4 @@
 
 # Ignore differences on PNPM's lockfile.
 # Since version 5.11.0, PNPM automatically resolve its merge conflicts.
-pnpm-lock.yaml
+pnpm-lock.yaml -diff
