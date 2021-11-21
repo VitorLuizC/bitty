@@ -7,11 +7,20 @@ node_modules/
 # Finder settings files (MacOS).
 .DS_Store
 
-# NPM's lockfiles.
-# We're using PNPM and it provides its own lockfile.
+# npm's lockfiles.
+# We're using pnpm and it provides its own lockfile.
 package-lock.json
-npm-shrinkwrap.json‎
+npm-shrinkwrap.json
 
-# Yarn's lockfile
-# We're using PNPM and it provides its own lockfile.
+# Yarn's lockfile, Plug'n'Play, folder and settings.
+# We're using pnpm and it provide its own lockfile and settings.
 yarn.lock
+.pnp.*
+.yarn/
+.yarnrc
+.yarnrc.yaml
+
+# pnpm's lockfile.
+# The only allowed pnpm lockfile is the root one.
+**/pnpm-lock.yaml
+!/pnpm-lock.yaml
