@@ -23,7 +23,7 @@ Package | Description
 [`@bitty/event-emitter`](https://github.com/VitorLuizC/event-emitter) | Emit and listen events in any class, object or function without messing them extending classes.
 [`@bitty/falsy`](./packages/falsy/README.md) | Falsy helper functions and types for TypeScript.
 [`@bitty/format-date`](https://github.com/VitorLuizC/format-date) | A small library (around 400 B when gziped & minified) to format JavaScript `Date` object using same tokens as moment.
-[`@bitty/insistence`](https://github.com/VitorLuizC/insistence) | Insistently runs a callback and only resolves the promise when its result is truthy.
+[`@bitty/insist`](https://github.com/VitorLuizC/insist) | Insistently runs a callback and only resolves the promise when its result is truthy.
 [`@bitty/json`](./packages/json/README.md) | Types and type-safe functions for JSON.
 [`@bitty/maybe`](https://github.com/VitorLuizC/maybe) | An algebraic data type that is a container for an optional values.
 [`@bitty/nullish`](./packages/nullish/README.md) | Nullish helper functions and types for TypeScript.
