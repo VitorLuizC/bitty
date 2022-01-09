@@ -1,6 +1,6 @@
 {
   "name": "@bitty/either",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Either monad implementation.",
   "sideEffects": false,
   "cdn": "./dist/Either.umd.js",
