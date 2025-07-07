@@ -6,6 +6,18 @@
     "build": "pnpm run build -r"
   },
   "devDependencies": {
-    "pnpm": "^6.25.1"
+    "pnpm": "^10.12.4"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "error",
+      "version": ">=22.14.0"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "onFail": "error",
+      "version": ">=10.12.4"
+    }
   }
 }
