@@ -11,14 +11,11 @@
   "jsdelivr": "./dist/pipe.umd.js",
   "umd:main": "./dist/pipe.umd.js",
   "exports": {
-    ".": [
-      {
-        "import": "./dist/pipe.mjs",
-        "require": "./dist/pipe.js",
-        "default": "./dist/pipe.js"
-      },
-      "./dist/pipe.js"
-    ]
+    ".": {
+      "types": "./types/pipe.d.ts",
+      "import": "./dist/pipe.mjs",
+      "require": "./dist/pipe.js"
+    }
   },
   "files": [
     "dist/",
@@ -63,10 +60,10 @@
   "homepage": "https://github.com/VitorLuizC/bitty/tree/master/packages/pipe",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^4.0.1",
-    "prettier": "^2.5.1",
-    "rollup": "^2.63.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "typescript": "^4.5.4"
+    "@rollup/plugin-terser": "^0.4.4",
+    "ava": "^6.4.0",
+    "prettier": "^3.6.2",
+    "rollup": "^4.44.2",
+    "typescript": "^5.8.3"
   }
 }

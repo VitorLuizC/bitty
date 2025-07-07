@@ -1,4 +1,5 @@
 import type { EitherMethods } from './Either.js';
+import type Right from './Right.js';
 
 interface Left<L, R> extends EitherMethods<L, R> {
   _kind: 'Left';
@@ -19,8 +20,8 @@ function Left<L = never, R = never>(value: L): Left<L, R> {
     then: () => Left(value),
     chain: () => Left(value),
     mapLeft: (fn) => Left(fn(value)),
-    isLeft: () => true,
-    isRight: () => false,
+    isLeft: (): this is Left<L, R> => true,
+    isRight: (): this is Right<L, R> => false,
     match: ({ left }) => left(value),
     fold: (onLeft) => onLeft(value),
     getOrElse: (fn) => fn(value),

@@ -19,8 +19,8 @@ test('tryCatch when error is thrown calls onLeft with error and returns its resu
         error instanceof Error
           ? error.message
           : typeof error === 'string'
-          ? error
-          : 'Unknown error message.',
+            ? error
+            : 'Unknown error message.',
       ),
   );
 

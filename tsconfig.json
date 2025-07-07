@@ -8,7 +8,8 @@
     // Type-check settings
     "alwaysStrict": true,
     "forceConsistentCasingInFileNames": true,
-    "importsNotUsedAsValues": "error",
+    // "verbatimModuleSyntax": true, Off until we deal with types export as
+    //                               default in some modules.
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,

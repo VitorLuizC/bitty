@@ -1,4 +1,5 @@
 import type { EitherMethods } from './Either.js';
+import type Left from './Left.js';
 
 import isEither from './isEither.js';
 
@@ -24,8 +25,8 @@ function Right<L = never, R = never>(value: R): Right<L, R> {
     },
     chain: (fn) => fn(value),
     mapLeft: () => Right(value),
-    isLeft: () => false,
-    isRight: () => true,
+    isLeft: (): this is Left<L, R> => false,
+    isRight: (): this is Right<L, R> => true,
     match: ({ right }) => right(value),
     fold: (_, onRight) => onRight(value),
     getOrElse: () => value,

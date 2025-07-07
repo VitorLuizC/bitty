@@ -4,7 +4,6 @@
     // Transpile output settings
     "target": "ES5",
     "module": "ES2015",
-    "charset": "utf-8",
     "newLine": "lf",
     "sourceMap": true,
 
